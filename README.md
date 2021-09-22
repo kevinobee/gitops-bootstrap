@@ -12,6 +12,8 @@ Project to explore bootstrapping Git driven Kubernetes (k8s) automation tooling.
 
 1. Setup Argo CD
 
+    Run the ```./install-argocd.sh``` script to perform the following tasks.
+
     1. Install Argo CD into cluster
 
         ```Shell
@@ -53,9 +55,11 @@ Project to explore bootstrapping Git driven Kubernetes (k8s) automation tooling.
 
 1. Create Argo CD application from Git repository
 
+    Run the ```./create-initial-app.sh``` script to perform the following tasks.
+
     ```Shell
     # Create application from Git repository
-    argocd app create applications --repo https://github.com/kevinobee/gitops-bootstrap.git --path / --dest-server https://kubernetes.default.svc --dest-namespace default
+    argocd app create applications --repo https://github.com/kevinobee/gitops-bootstrap.git --path apps --dest-server https://kubernetes.default.svc --dest-namespace default
 
     # Sync the application
     argocd app sync applications
