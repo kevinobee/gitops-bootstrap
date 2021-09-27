@@ -18,6 +18,7 @@
       "dexidp",
       "entrypoint",
       "Gitea",
+      "Grafana",
       "grpc",
       "healthz",
       "jsonnet",

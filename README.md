@@ -65,6 +65,14 @@ Project to explore bootstrapping Git driven Kubernetes (k8s) automation tooling.
     argocd app sync applications
     ```
 
+## Cluster Applications
+
+1. Prometheus and Grafana monitoring applications
+
+    Use the following commands to inspect the Prometheus stack:
+    * ```kubectl describe application prometheus```
+    * ```kubectl get application prometheus -o yaml```
+
 ## Next Tasks
 
 1. Add Prometheus monitoring
