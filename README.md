@@ -67,15 +67,17 @@ Project to explore bootstrapping Git driven Kubernetes (k8s) automation tooling.
 
 ## Next Tasks
 
-1. Add Git repository accessible to your Kubernetes cluster
+1. Add Prometheus monitoring
 
-    [Gitea](https://gitea.com/) will be used in the repository examples to provide a locally hosted Git repository that can be monitored by and interact with Argo CD running in the cluster.
+    Run ```./install-monitoring.sh``` to install the Prometheus monitoring stack using Host installed Helm
+
+<!-- 1. [Gitea](https://gitea.com/) will be used in the repository examples to provide a locally hosted Git repository that can be monitored by and interact with Argo CD running in the cluster. -->
 
 ## References
 
 * [Argo CD: Getting started](https://argo-cd.readthedocs.io/en/stable/getting_started/)
 
-* [Gitea: Git with a cup of tea](https://gitea.com/)
+<!-- * [Gitea: Git with a cup of tea](https://gitea.com/) -->
 
 * [Homebrew on Linux](https://docs.brew.sh/Homebrew-on-Linux)
 
