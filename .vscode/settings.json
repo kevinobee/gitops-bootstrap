@@ -35,14 +35,18 @@
       "minversion",
       "OIDC",
       "openAPIV3Schema",
+      "proxier",
       "REDISDB",
       "reposerver",
       "Rollouts",
       "rootpath",
       "rundex",
+      "sealedsecret",
+      "sealedsecrets",
       "staticassets",
       "subresources",
       "templating",
-      "tlas"
+      "tlas",
+      "unsealer"
     ]
 }
