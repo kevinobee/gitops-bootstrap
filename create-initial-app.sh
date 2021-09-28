@@ -8,3 +8,4 @@ argocd app create applications --repo https://github.com/kevinobee/gitops-bootst
 echo "Install Helm repositories"
 argocd repo add https://charts.helm.sh/stable --type helm --name stable
 argocd repo add https://prometheus-community.github.io/helm-charts --type helm --name prometheus-community
+argocd repo add https://charts.appscode.com/stable/ --type helm --name appscode
