@@ -2,20 +2,21 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: prometheus
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
+  project: default
+  source:
+    path: charts/prometheus
+    repoURL: https://github.com/prometheus-community/helm-charts
+    targetRevision: HEAD  # 18.1.0
   destination:
-    name: ''
     namespace: monitoring
     server: 'https://kubernetes.default.svc'
-  source:
-    path: ''
-    repoURL: 'https://prometheus-community.github.io/helm-charts.git'
-    targetRevision: 18.1.0
-    chart: kube-prometheus-stack
-  project: default
   syncPolicy:
-    syncOptions:
-      - CreateNamespace=true
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

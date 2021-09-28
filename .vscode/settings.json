@@ -17,6 +17,8 @@
       "dexconfig",
       "dexidp",
       "entrypoint",
+      "finalizer",
+      "finalizers",
       "Gitea",
       "Grafana",
       "grpc",
